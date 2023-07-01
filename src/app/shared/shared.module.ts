@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -11,8 +11,10 @@ import { HttpRequestInterceptor } from './interceptors/http-request.interceptor'
 import { ButtonComponent } from './components/button/button.component';
 import { MatListModule } from '@angular/material/list';
 
+import { DataCyDirective } from './directives/data-cy.directive';
+
 @NgModule({
-    declarations: [ButtonComponent],
+    declarations: [DataCyDirective, ButtonComponent],
     imports: [
         CommonModule,
         MatInputModule,
@@ -22,6 +24,7 @@ import { MatListModule } from '@angular/material/list';
         MatListModule,
     ],
     exports: [
+        DataCyDirective,
         MatInputModule,
         MatCardModule,
         ButtonComponent,
@@ -37,5 +40,6 @@ import { MatListModule } from '@angular/material/list';
             multi: true,
         },
     ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule {}

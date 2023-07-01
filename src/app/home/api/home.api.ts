@@ -9,16 +9,14 @@ export class HomeApi {
 
     public fetchItems(): Observable<Item[]> {
         return of([
-            { id: '1', name: 'Item 1' },
-            { id: '2', name: 'Item 2' },
+            { id: '792', name: 'Naruto com chapéu do Luffy' },
         ] as Item[]);
         // return this.http.get<Item[]>('/items');
     }
 
     public addItem(item: Item): Observable<Item[]> {
         return of([
-            { id: '1', name: 'Item 1' },
-            { id: '2', name: 'Item 2' },
+            { id: '792', name: 'Naruto com chapéu do Luffy' },
         ] as Item[]);
         // return this.http.post<Item[]>('/items', item);
     }

@@ -17,7 +17,7 @@
       "parserOptions": {
         "project": [
           "tsconfig.json",
-          "e2e/tsconfig.json"
+          "cypress/tsconfig.json"
         ],
         "createDefaultProgram": true
       },
@@ -34,7 +34,6 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "app",
             "style": "camelCase"
           }
         ],

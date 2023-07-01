@@ -3,6 +3,6 @@
         class="item"
         role="listitem"
         *ngFor="let item of items; let i = index">
-        <span>{{ i + 1 }} - {{ item.name }}</span>
+        <span [dataCy]="'item-' + item.id">{{ i + 1 }} - {{ item.name }}</span>
     </mat-list-item>
 </mat-list>
