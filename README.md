@@ -1,27 +1,97 @@
-# FrontendAngularEss
+# ESS Front-end Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+This is the Front-end base project in React for the Software and Systems Engineering discipline, offered by the Informatics Center (CIn) of the Federal University of Pernambuco (UFPE).
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. [Getting Started](##getting-started)
+2. [Running the tests](#running-the-tests)
+3. [Scripts](#scripts)
+4. [Dependencies](#dependencies)
+5. [Architecture](#architecture)
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run this project, you'll need to have the following software installed on your system:
 
-## Running unit tests
+- Node.js
+- npm (Node Package Manager)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installing
 
-## Running end-to-end tests
+Clone the repository and install the dependencies by running the following command in the project directory:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install
+```
 
-## Further help
+### First time running ?
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run the follow scripts
+
+```
+chmod +x .husky/pre-commit
+chmod +x .husky/pre-push
+```
+
+```
+npm run
+```
+
+### Running the App
+
+To start the app, run the following command:
+
+```
+npm start
+```
+
+This command will run the Angular app.
+
+## Running the tests
+
+There are two types of tests configured in the base project: unit tests using [Jest](https://jestjs.io/docs/getting-started) and E2E acceptance tests using [Cypress](https://docs.cypress.io/guides/overview/why-cypress) with [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor). It's interesting to create the **.env.testing** at the root of the project the same way it was created to run in development, changing the necessary values.
+
+To run unit tests individually, you can easily use the VScode extension [Jest Run It](https://marketplace.visualstudio.com/items?itemName=vespa-dev-works.jestRunIt). If you want to run all the test suite, you can run: 
+
+```
+npm test
+```
+
+To run E2E tests in **interactive mode**
+
+```
+npm run cy:e2e-interactive
+```
+
+To run E2E tests in **headless mode**
+
+```
+npm run cy:e2e-headless
+```
+
+## Scripts
+
+The following scripts are available in the `package.json` file:
+
+- `start`: Runs the app in development mode.
+- `build`: Compiles the TypeScript code.
+- `test`: Runs the Jest tests for the project.
+- `prettier`: Formats the code using Prettier.
+- `lint`: Lints the code using ESLint.
+
+## Dependencies
+
+The following dependencies are used in the project:
+
+- [Angular CLI](https://github.com/angular/angular-cli) v16.1.3: Angular is a JavaScript library for building user interfaces.
+- [Angular Material](https://material.angular.io/) v16.1.3: Material Design components for Angular.
+
+
+## Architecture
+
+To understand and learn more details about the structure of the project, click [here](./docs/architecture-pattern.md) to be redirected to the README that contains this information.
