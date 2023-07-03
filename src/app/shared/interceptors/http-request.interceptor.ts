@@ -19,7 +19,6 @@ export class HttpRequestInterceptor implements HttpInterceptor {
         req = req.clone({
             url: `${this.apiUrl}${req.url}`,
         });
-        console.log(req.url);
         return this.handler(req, next);
     }
 
