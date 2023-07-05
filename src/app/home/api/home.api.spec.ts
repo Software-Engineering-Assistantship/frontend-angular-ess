@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 // TODO: fix this test
 
@@ -8,7 +9,10 @@ describe('HomeApi', () => {
     let api: HomeApi;
 
     beforeEach(() => {
-        TestBed.configureTestingModule({});
+        TestBed.configureTestingModule({
+            imports: [HttpClientTestingModule],
+            providers: [HomeApi],
+        });
         api = TestBed.inject(HomeApi);
     });
 

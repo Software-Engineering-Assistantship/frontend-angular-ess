@@ -54,24 +54,32 @@ This command will run the Angular app.
 
 ## Running the tests
 
-There are two types of tests configured in the base project: unit tests using [Jest](https://jestjs.io/docs/getting-started) and E2E acceptance tests using [Cypress](https://docs.cypress.io/guides/overview/why-cypress) with [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor). It's interesting to create the **.env.testing** at the root of the project the same way it was created to run in development, changing the necessary values.
+There are two types of tests configured in the base project: unit tests using [Jest](https://jestjs.io/docs/getting-started) and E2E acceptance tests using [Cypress](https://docs.cypress.io/guides/overview/why-cypress) with [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor).
 
-To run unit tests individually, you can easily use the VScode extension [Jest Run It](https://marketplace.visualstudio.com/items?itemName=vespa-dev-works.jestRunIt). If you want to run all the test suite, you can run: 
+To run unit tests individually, you can easily use the VScode extension [Jest Run It](https://marketplace.visualstudio.com/items?itemName=vespa-dev-works.jestRunIt). If you want to run all the unit tests suite, you can run: 
 
 ```
 npm test
 ```
 
+To run unit tests in **watch mode**
+
+```
+npm run test:watch
+```
+
+To run E2E acceptance tests, you need to have the app running. Therefore, make sure to initiate the app before running the tests.
+
 To run E2E tests in **interactive mode**
 
 ```
-npm run cy:e2e-interactive
+npm run cy:open-e2e
 ```
 
 To run E2E tests in **headless mode**
 
 ```
-npm run cy:e2e-headless
+npm run ccy:run-e2e
 ```
 
 ## Scripts

@@ -28,8 +28,8 @@ describe('AppComponent', () => {
         const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
         const compiled = fixture.nativeElement as HTMLElement;
-        expect(compiled.querySelector('.content span')?.textContent).toContain(
-            'frontend-angular-ess app is running!'
+        expect(compiled.querySelector('span.title')?.textContent).toContain(
+            'Crie um item'
         );
     });
 });
