@@ -35,7 +35,15 @@ export class HomeFacade {
             .pipe(first())
             .subscribe({
                 next: (items: Item[]) => {
-                    this.homeState.setItems(items);
+                    // TODO: remove this line when backend is ready
+                    items.push(item);
+
+                    if (items.includes(item)) {
+                        this.homeState.setItems(items);
+                        alert('Item criado com sucesso!');
+                    } else {
+                        alert('Erro ao criar item!');
+                    }
                 },
                 error: error => {
                     // TODO: handle error

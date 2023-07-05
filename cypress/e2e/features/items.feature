@@ -4,13 +4,13 @@ Feature: Criar e visualizar item
   so that eu possa ter um histórico de item.
 
 Scenario: Criar um item
-  Given o usuário está na página "home"
-  When o usuário preenche o campo "input-item" com "Eda, the Owl Lady"
+  Given o usuário está na página ""
+  When o usuário preenche o campo "item-input" com "Eda, the Owl Lady"
   And o usuário escolhe a opção "create-item"
   Then o usuário vê a mensagem "Item criado com sucesso!"
 
 Scenario: Visualizar item
-  Given o usuário está na página "home"
+  Given o usuário está na página ""
   When o usuário escolhe a opção "view-items"
   Then o usuário está na página "items"
-  And visualiza o item "792" de nome "Naruto com chapéu do Luffy"
+  And o usuário visualiza o item "792" de nome "Naruto com chapéu do Luffy"
