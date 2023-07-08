@@ -1,6 +1,6 @@
 # ESS Front-end Angular
 
-This is the Front-end base project in React for the Software and Systems Engineering discipline, offered by the Informatics Center (CIn) of the Federal University of Pernambuco (UFPE).
+This is the Front-end base project in Angular for the Software and Systems Engineering discipline, offered by the Informatics Center (CIn) of the Federal University of Pernambuco (UFPE).
 
 ## Table of Contents
 
