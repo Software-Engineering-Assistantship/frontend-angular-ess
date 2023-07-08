@@ -4,8 +4,8 @@ The base project was created to give a quick "start" to the discipline's team pr
 
 ## Table of Contents
 
-1. [Separation into modules](#layered-architecture)
-2. [Abstraction Layers](#abstraction-layers)
+1. [Abstraction Layers](#abstraction-layers)
+2. [Separation into modules](#separation-into-modules)
 3. [Shared](#shared)
 4. [Conclusion](#conclusion)
 
@@ -75,6 +75,6 @@ The "shared" folder is the representation of a module that contains information 
 
 ---
 
-# Conclusion
+## Conclusion
 
 Certainly, there are more details about the functionalities that are used in the project. However, the **Home** module example case already covers many aspects, including testing. The base project is designed to make it easy, not to limit your preferences. What needs to be emphasized is that the main idea is the architecture used, which clearly distributes code responsibilities, thus facilitating maintenance and testing.
