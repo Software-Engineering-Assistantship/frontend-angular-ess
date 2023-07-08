@@ -79,7 +79,7 @@ npm run cy:open-e2e
 To run E2E tests in **headless mode**
 
 ```
-npm run ccy:run-e2e
+npm run cy:run-e2e
 ```
 
 ## Scripts
