@@ -29,19 +29,6 @@ Clone the repository and install the dependencies by running the following comma
 npm install
 ```
 
-### First time running ?
-
-Run the follow scripts
-
-```
-chmod +x .husky/pre-commit
-chmod +x .husky/pre-push
-```
-
-```
-npm run
-```
-
 ### Running the App
 
 To start the app, run the following command:
